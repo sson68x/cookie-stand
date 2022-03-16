@@ -1,0 +1,31 @@
+body{
+  background-color: white;
+}
+
+h1{
+  font-family: monospace;
+  font-size: 2em;
+  text-align: center;
+  color: Black;
+}
+
+table{
+  background-color: lightgreen;
+  width: 75%;
+}
+
+th{
+  background-color: lightyellow;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+  width: 6.25%;
+}
+
+td{
+  border: 1px solid black;
+  text-align: center;
+  width: 6.25%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
