@@ -199,8 +199,9 @@ let paris = {
     h2Elem.textContent = this.location;
     articleElem.appendChild(h2Elem);
 
-    let pElem = document.createElement('p');
-    articleElem.appendChild(pElem);
+  let locationCell = document.createElement('th');
+  locationCell.textContent = 'Location';
+  row1.appendChild(locationCell);
 
     let ulElem = document.createElement('ul');
     articleElem.appendChild(ulElem);
