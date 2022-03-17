@@ -1,17 +1,58 @@
-body{
-  background-color: white;
+ul.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav {
+  background-color: lightgreen;
+  align-content: center;
+  margin-bottom: 30px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+header nav li {
+  font-family: monospace;
+  font-size: 2em;
+}
+
+a {
+  color: rgb(107, 107, 107);
+  text-decoration: none;
+}
+
+main img {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1{
   font-family: monospace;
-  font-size: 2em;
-  text-align: left;
+  font-size: 5em;
+  text-align: center;
   color: Black;
 }
 
 table{
   background-color: lightgreen;
   width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 th{
@@ -28,4 +69,43 @@ td{
   width: 6.25%;
   padding-top: 1%;
   padding-bottom: 1%;
+}
+
+footer {
+  background-color: lightgreen;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-family: monospace;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 1.5%
+
+}
+
+footer nav {
+  background-color: lightgreen;
+  align-content: center;
+  margin-bottom: 30px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer nav ul {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+footer nav li {
+  font-family: monospace;
+  font-size: 1.5em;
 }
