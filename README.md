@@ -20,3 +20,18 @@
 
 - Added table elements
 - Added css styles
+
+## Lab 08
+
+### Author: Simon Son
+
+### Links and Resources
+
+- imgs from https://github.com/codefellows/seattle-code-201d84/tree/main/class-08/image-assets
+
+### Reflections
+
+- Added imgs
+- Added locations
+- Added store hours
+- Added contact information
