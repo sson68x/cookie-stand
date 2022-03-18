@@ -1,6 +1,7 @@
 'use strict';
 
 let cookieSection = document.getElementById('stores-profiles');
+let storeForm = documnet.getElementById('stores-form')
 
 function randomCustomer(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -9,6 +10,7 @@ function randomCustomer(min, max) {
 let storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
 let storeLocations = [];
+let combinedTotalCookies = 0;
 
 function Location(city, minCustomers, maxCustomers, avgCookies) {
   this.city = city;
@@ -103,8 +105,8 @@ function lastRow() {
     row1.appendChild(totalHourElem);
   }
 
-  let allTotalElem = document.createElement('td');
-  allTotalElem.textContent = `${storeLocations[0].totalCookies + storeLocations[1].totalCookies + storeLocations[2].totalCookies + storeLocations[3].totalCookies + storeLocations[4].totalCookies}`;
+  let combinedTotalElem = document.createElement('td');
+  combinedTotalElem.textContent = `${storeLocations[0].totalCookies + storeLocations[1].totalCookies + storeLocations[2].totalCookies + storeLocations[3].totalCookies + storeLocations[4].totalCookies}`;
   row1.appendChild(allTotalElem);
 }
 
@@ -119,3 +121,24 @@ function renderAllLocations() {
 firstRow();
 renderAllLocations();
 lastRow();
+
+function storeSubmit(event) {
+  event.preventDefault();
+  let city = event.target.locationName.value;
+  let minCustomers = event.target.minCust.value;
+  let maxCustomers = event.target.maxCust.value;
+  let avgCookies = event.target.avgCookies.value;
+
+  let newLocation = new Location(city, minCustomers, maxCustomers, avgCookies);
+
+  let deleteElem = document.getElementById('stores-profiles').lastChild;
+  cookieSection.removeChild(deleteElem);
+
+  combinedTotalCookies = 0;
+  newLocation.customerData();
+  newLocation.cookiesData();
+  newLocation.render();
+  lastRow();
+}
+
+storeForm.addEventListner('submit', handleSubmit);
