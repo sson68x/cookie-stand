@@ -49,14 +49,38 @@ a {
 main img {
   display: block;
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
 
+form legend  {
+font-family: monospace;
+font-size: 2em;
+text-align: center;
+padding: 1%;
+}
+ 
+form fieldset {
+  font-family: monospace;
+  font-size: 1.5em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:25px;
+  margin-bottom: 25px;
+}
+
+form button {
+  background-color: lightgreen;
+  font-size: 0.75em;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
 table{
   background-color: lightgreen;
-  width: 75%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -67,6 +91,8 @@ th{
   text-align: center;
   vertical-align: middle;
   width: 6.25%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 td{
@@ -79,8 +105,8 @@ td{
 
 footer {
   background-color: lightgreen;
-  position: static;
-  height: 100%;
+  position: fixed;
+  bottom: 0;
   width: 100%;
 }
 
