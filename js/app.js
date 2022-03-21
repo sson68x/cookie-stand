@@ -1,23 +1,14 @@
 'use strict';
 
+let cookieSection = document.getElementById('stores-profiles');
 
 let storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 let storeLocations = [];
 let combinedTotalCookies = 0;
-let cookieSection = document.getElementById('stores-profiles');
-let storeForm = document.getElementById('stores-form');
+
 
 function randomCustomer(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-function locationCookiesHour(index) {
-  let total = 0;
-  for(let i = 0; i < storeLocations.length; i++) {
-    total += storeLocations[i].cookiesPerHour[index];
-  }
-  combinedTotalCookies += total;
-  return total;
 }
 
 function Location(city, minCustomers, maxCustomers, avgCookies) {
@@ -132,7 +123,18 @@ firstRow();
 renderAllLocations();
 lastRow();
 
-function storeSubmit(event) {
+let storeForm = document.getElementById('stores-form');
+
+function locationCookiesHour(index) {
+  let total = 0;
+  for(let i = 0; i < storeLocations.length; i++) {
+    total += storeLocations[i].cookiesPerHour[index];
+  }
+  combinedTotalCookies += total;
+  return total;
+}
+
+function handleSubmit(event) {
   event.preventDefault();
 
   let city = event.target.locationName.value;
@@ -152,4 +154,4 @@ function storeSubmit(event) {
   lastRow();
 }
 
-storeForm.addEventListener('submit', storeSubmit);
+storeForm.addEventListener('submit', handleSubmit);
