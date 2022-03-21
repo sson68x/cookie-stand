@@ -4,12 +4,18 @@ ul.no-bullets {
   margin: 0;
 }
 
+body {
+  background-color: #a5a58d;
+}
+
 h1{
-  background-color: lightgrey;
+  background-color: #cb997e;
   font-family: monospace;
-  font-size: 5em;
+  font-size: 6em;
   text-align: center;
   color: Black;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 header img {
@@ -17,9 +23,8 @@ header img {
 }
 
 header nav {
-  background-color: lightgreen;
+  background-color: #ddbea9;
   align-content: center;
-  margin-bottom: 30px;
   padding-top: 1%;
   padding-bottom: 1%;
   display: flex;
@@ -38,7 +43,7 @@ header nav ul {
 
 header nav li {
   font-family: monospace;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 a {
@@ -54,63 +59,106 @@ main img {
   margin-right: auto;
 }
 
-table{
-  background-color: lightgreen;
-  width: 75%;
+#family {
+  font-size: 2em;
+  background-color: #ffe8d6;
+  padding: 30px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-th{
-  background-color: lightyellow;
-  border: 1px solid black;
-  text-align: center;
-  vertical-align: middle;
-  width: 6.25%;
+#family h2 {
+  padding-left: 100px;
+  font-size: 2em;
 }
 
-td{
-  border: 1px solid black;
+#family p {
+  padding-left: 100px;
+}
+
+#cutter {
+  font-size: 2em;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cutter h2 {
+  font-size: 2em;
   text-align: center;
-  width: 6.25%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+}
+
+#cutter p {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#tshirt {
+  font-size: 2em;
+  background-color: #ffe8d6;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tshirt img {
+  padding-right: 200px;
+}
+
+#tshirt h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+#tshirt p {
+  padding-left: 200px;
+  padding-right: 100px;
 }
 
 footer {
-  background-color: lightgreen;
-  position: static;
-  height: 100%;
-  width: 100%;
-}
-
-footer p {
-  font-family: monospace;
-  font-size: 2em;
-  text-align: center;
-  padding-top: 1.5%
-
-}
-
-footer nav {
-  background-color: lightgreen;
-  align-content: center;
-  padding-top: 1%;
-  padding-bottom: 2%;
+  background-color: #ddbea9;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-footer nav ul {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
-  width: 80%;
 }
 
-footer nav li {
-  font-family: monospace;
+footer img {
+  margin-left:200px;
+}
+
+#ul1 h2 {
+  margin-top: 40px;
+  padding-right: 400px;
+  font-weight: bold;
   font-size: 1.5em;
+  text-decoration: underline;
+}
+
+#ul1 li {
+  font-size: 1.8em;
+  margin-left: 30%;
+  padding-top: 10px;
+}
+
+#ul2 h2 {
+  margin-top: 40px;
+  margin-right: 1300px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+#ul2 li{
+  font-size: 1.8em;
+  margin-left: 30%;
+  padding-top: 10px;
 }
